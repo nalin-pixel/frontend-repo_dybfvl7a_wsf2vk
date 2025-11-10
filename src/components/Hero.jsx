@@ -1,10 +1,13 @@
 import Spline from '@splinetool/react-spline';
+import ErrorBoundary from './ErrorBoundary';
 
 export default function Hero() {
   return (
     <section id="beranda" className="relative pt-24">
       <div className="absolute inset-0 overflow-hidden">
-        <Spline scene="https://prod.spline.design/L2pYub3o9X0g9sLf/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <ErrorBoundary>
+          <Spline scene="https://prod.spline.design/Qe6dlWJktclXcUBS/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        </ErrorBoundary>
       </div>
       <div className="relative">
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white"></div>
